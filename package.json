@@ -2,7 +2,7 @@
   "name": "authentication-api",
   "version": "0.0.33",
   "description": "Authentication API",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "buildSample": "babel ./sample/ --out-dir dist/sample --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "buildSrc": "babel ./src --out-dir dist/src --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
