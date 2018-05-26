@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "buildSample": "babel ./sample/ --out-dir dist/sample --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "buildSrc": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "buildSrc": "babel ./src --out-dir dist/src --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "clean": "rimraf dist/",
-    "sample": "npm run clean && npm run buildSample && npm run buildSrc && node dist/sample/server.js"
+    "sample": "npm run clean && npm run buildSample && npm run buildSrc && node dist/sample/server.js",
+    "prepublish": "npm run clean && npm run buildSrc"
   },
   "author": "Antonio Pol",
   "license": "MIT",
