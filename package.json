@@ -6,9 +6,8 @@
   "scripts": {
     "buildSample": "babel ./sample/ --out-dir dist/sample --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "buildSrc": "babel ./src --out-dir dist/src --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "clean": "rimraf dist/",
-    "sample": "npm run clean && npm run buildSample && npm run buildSrc && node dist/sample/server.js",
-    "prepublish": "npm run clean && npm run buildSrc"
+    "sample": "npm run buildSample && npm run buildSrc && node dist/sample/server.js",
+    "prepublish": "npm run buildSrc"
   },
   "author": "Antonio Pol",
   "license": "MIT",
@@ -23,7 +22,6 @@
     "morgan": "^1.9.0"
   },
   "dependencies": {
-    "rimraf": "^2.6.2",
     "sample": "0.0.2"
   },
   "repository": {
