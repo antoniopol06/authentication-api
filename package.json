@@ -1,6 +1,6 @@
 {
   "name": "authentication-api",
-  "version": "0.0.360",
+  "version": "0.0.361",
   "description": "Authentication API",
   "main": "./dist/index.js",
   "scripts": {
