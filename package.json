@@ -1,6 +1,6 @@
 {
   "name": "authentication-api",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "Authentication API",
   "main": "index.js",
   "scripts": {
