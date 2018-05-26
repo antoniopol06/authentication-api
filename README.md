@@ -26,13 +26,13 @@ Module to reuse authentication part. If you are bored to code authentication par
 2. Import module
 
 ```javascript
-var authApi        = require('auth-api');
+var authApi = require('authentication-api');
 ```
 
 3. Set authentication-api routes on your express routes:
 
 ```javascript
-app.use('/*', authApi.authRouter);
+app.use('/*', authApi.router);
 ```
 
 ## Routes that were generated:
